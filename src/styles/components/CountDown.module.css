@@ -8,11 +8,9 @@
 
 .countDownContainer>div {
     flex: 1;
-
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
     background: var(--white);
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
@@ -40,26 +38,42 @@
 .countDownButton {
     width: 100%;
     height: 5rem;
-    
     margin-top: 2rem;
-    
     border: 0;
     border-radius: 5px;
-    
     display: flex;
     align-items: center;
     justify-content: center;
-    
     background: var(--blue);
     color: var(--white);
-    
     font-size: 1.25rem;
     font-weight: 600;
-
     transition: background-color 0.2s;
 }
 
-
-.countDownButton:hover {
+.countDownButton:not(:disabled):hover {
     background: var(--blue-dark);
+}
+
+.countDownButtonIsActive {
+    background: var(--white);
+    color: var(--title);
+}
+
+.countDownButtonIsActive:not(:disabled):hover {
+    background: var(--red);
+    color: var(--title);
+}
+
+.countDownButton:disabled {
+    background: var(--white);
+    color: var(--title);
+    cursor: default;
+    border-bottom: 4px solid var(--green);
+}
+
+@media (max-width: 720px) {
+    .countDownContainer>div span {
+        width: 5rem;
+    }
 }
