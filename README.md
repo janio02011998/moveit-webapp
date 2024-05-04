@@ -59,7 +59,7 @@ Tecnologias e ferramentas utilizadas no desenvolvimento do projeto:
 
 ```bash
 # Abra um terminal e copie este repositório com o comando
-git clone 
+git clone https://github.com/janio02011998/moveit-webapp.git
 # ou use a opção de download.
 
 # Entre na pasta do projeto com 
