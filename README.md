@@ -35,9 +35,6 @@ O Move.it é um App que utiliza a técnica de [pomodoro](https://pt.wikipedia.or
 
 <br>
 
-<p align="center">
-  <img src=".github/cover.png" alt="Página inicial">
-</p>
 
 ## Tecnologias
 
